@@ -1,0 +1,105 @@
+/* font-family: "RobotoRegular"; */
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+    src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+    url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoBold"; */
+@font-face {
+    font-family: "RobotoBold";
+    src: url("../fonts/RobotoBold/RobotoBold.eot");
+    src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoBold/RobotoBold.woff") format("woff"),
+    url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+body {
+	font-family: 'RobotoRegular';
+	font-size: 12px;
+}
+div {
+	box-sizing: border-box;
+}
+h1 {
+	text-align: center;
+}
+#chat {
+	position: relative;
+	height: 440px;
+	width: 430px;
+	margin: 50px auto;
+	border: 1px solid #dde0e3;
+}
+#messages {
+	height: 305px;
+	padding: 0 20px;
+	overflow: auto;
+}
+#messages .message {
+	float: left;
+	width: 365px;
+	position: relative;
+	padding: 10px;
+	margin-top: 10px;
+	border: 1px solid #dde0e3;
+	border-radius: 5px;
+}
+#messages .message img{
+	display: block;
+	position: absolute;
+	left: -8px;
+    top: 20px;
+}
+#messages .message.my {
+	float: right;
+	background: #f6f8f9;
+}
+#messages .message.my img{
+	 left: 363px;
+}
+#messages .message p { margin: 0; }
+#messages .message .messageName{ color: #949494; }
+#sendMessageForm {
+	display: block;
+	width: 100%;
+	height: 135px;
+	padding: 13px 13px 10px;
+	border-top: 1px solid #dde0e3;
+	background: linear-gradient(to top, #dde0e3 , #f8f8f8);
+}
+::-webkit-input-placeholder {color:#000; font-weight: bold;}
+::-moz-placeholder          {color:#000; font-weight: bold;}/* Firefox 19+ */
+:-moz-placeholder           {color:#000; font-weight: bold;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#000; font-weight: bold;}
+#sendMessageForm input{
+	display: inline-block;
+	height: 30px;
+	width: 190px;
+	margin-bottom: 13px;
+	padding-left: 10px;
+	border: 1px solid #dde0e3;
+}
+#sendMessageForm input[name=firstName]{
+	margin-right: 10px;
+}
+#sendMessageForm input[name=messageText]{
+	width: 400px;
+	margin-bottom: 10px;
+}
+#sendMessageForm button {
+	display: block;
+	margin: 0 auto;
+	height: 30px;
+	width: 130px;
+	border: 1px solid #dde0e3;
+	background: linear-gradient(to top, #d9e0e3 , #fcfcfc);
+	font-family: 'RobotoBold';
+	color: #fff;
+	text-transform: uppercase;
+}
+

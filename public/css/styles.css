@@ -102,4 +102,33 @@ h1 {
 	color: #fff;
 	text-transform: uppercase;
 }
+#showAllMessages {
+	display: block;
+	width: 200px;
+	height: 50px;
+	margin: 0 auto;
+	padding-top: 14px;
+	border: 1px solid #000;
+	text-decoration: none;
+	text-align: center;
+	color: #000;
+	font-size: 14px;
+	cursor: pointer;
+}
+#showAllMessages:hover {
+	background: #dde0e3;
+}
+/* All messages table */
+.container table, .container ul.pagination {
+	display: table;
+	margin: 10px auto;
+}
+.container table.table {
+	max-width: 600px;
+}
+
+.container table th {
+	font-weight: bold;
+}
+
 

@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('chat');
 });
+
+Route::post('/createMessage', 'MessageController@createMessage');
+Route::get('/getNewMessage', 'MessageController@getChatNewMessage');
+Route::get('/allMessages', 'MessageController@getAllMessages');
+

@@ -25,7 +25,7 @@ php artisan key:generate
 touch database/database.sqlite
 chmod o+w database database/database.sqlite
 ```
-Настройте файл .env
+Настройка файла .env
 ```sh
 DB_CONNECTION=sqlite
 DB_DATABASE=/absolute/path/to/database.sqlite
